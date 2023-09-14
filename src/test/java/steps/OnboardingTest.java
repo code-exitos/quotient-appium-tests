@@ -4,11 +4,13 @@ import io.cucumber.java.en.Given;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import io.cucumber.java.Before;
 
 import setups.Capabilities;
 
-public class OnBoardingTest extends Capabilities {
+public class OnboardingTest extends Capabilities {
 
+    @Before
     @BeforeTest
     public void setup() throws Exception{
         preparation();

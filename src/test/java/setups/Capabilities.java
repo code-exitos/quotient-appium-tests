@@ -17,7 +17,7 @@ public class Capabilities extends DesiredCapabilities {
         caps.setCapability("platformName", "Android");
         caps.setCapability("automationName", "UiAutomator2");
         caps.setCapability("platformVersion", "10");
-        caps.setCapability("deviceName", "28c966dd573f7ece");
+        caps.setCapability("deviceName", "Note9");
         caps.setCapability("appPackage", "com.quotientterminal");
         caps.setCapability("appActivity", "com.quotientterminal.MainActivity");
 
