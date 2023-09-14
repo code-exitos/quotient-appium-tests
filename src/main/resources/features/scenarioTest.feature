@@ -1,4 +1,4 @@
-@RaraliQATeam
+@QuotientTest
 Feature: AppiumTest
 
   @DoTest
