@@ -2,6 +2,7 @@ package setups;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 
@@ -12,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class Capabilities extends DesiredCapabilities {
     public AppiumDriver driver;
 
-    protected void preparation() throws MalformedURLException {
+    public void preparation() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("automationName", "UiAutomator2");
