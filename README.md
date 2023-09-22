@@ -23,8 +23,11 @@
 You can run the an appium server using the `Appium Desktop` app or installing it with `Node js`
 * `Method 1`: Install Appium using Node.js
   - Follow this instructions: https://appium.io/docs/en/2.1/quickstart/install/
+  <img width="797" alt="Screenshot 2023-09-22 at 15 52 07" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/2c6b364d-6cd7-46ad-a26a-c376e7523a93">
+
 * `Method 2`: Install Appium using Appium Desktop Client: 
   - Find the link here: https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
+ <img width="1331" alt="Screenshot 2023-09-22 at 15 51 24" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/cc76b03b-54e1-445d-8241-44ae81797f79">
 
 ### Appium Inspector
 Appium inspector allows you to check the selectors of the app, this is `optional`, you can also find the selectors on the quotient-terminal codebase.
@@ -36,7 +39,8 @@ Appium inspector allows you to check the selectors of the app, this is `optional
 2. Setup
 - Once it is installed the next step is to set up the capabilities of the emulated mobile that will be used.
 - More documentation about capabilities: https://appium.io/docs/en/2.1/guides/caps/
-- Example with my own setup:
+- Example with my own setup:<br>
+<img width="1549" alt="Screenshot 2023-09-22 at 15 49 50" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/1d6e345c-8e01-4c3c-8369-50b4ad5cc2cc">
 
 ### JDK
 Install JDK and set up the variables on your computer in .bash_profile or .bashrc file.
@@ -78,11 +82,23 @@ Some examples of keywords are:
 ## Example
 For this example I'm going to use the Onboarding test that is already done
 
-*Step1*: Configure the `capabilities` inside the Capabilities file<br>
-*Step2*: Create the `feature` inside the features folder<br>
-*Step3*: Create a page file and inside it `get the selectors` and `create the methods` that will use this selectors inside the pages folder<br>
-*Step4*: Create the `test steps` inside the steps folder<br>
-*Step5*: Run the scenario
+*Step 1*: Configure the `capabilities` inside the Capabilities file<br>
+<img width="1235" alt="Screenshot 2023-09-22 at 15 31 03" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/33fbb1f7-3a7e-49ad-81fc-0dc05d012da3">
+
+*Step 2*: Create the `feature` inside the features folder<br>
+<img width="642" alt="Screenshot 2023-09-22 at 15 37 27" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/19616da6-a1bd-407a-a071-1c287eca9173">
+
+*Step 3*: Create a page file and inside it `get the selectors` and `create the methods` that will use this selectors inside the pages folder<be>
+<img width="1496" alt="Screenshot 2023-09-22 at 15 40 11" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/f8fd3c4a-13e0-4fc6-99bb-53e85a914e44">
+
+*Step 4*: Create the `test steps` inside the steps folder<br>
+<img width="1314" alt="Screenshot 2023-09-22 at 15 41 17" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/209573eb-30d2-463d-9435-08517133c062">
+
+*Step 5*: Run the scenario<br>
+<img width="750" alt="Screenshot 2023-09-22 at 15 42 15" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/f669a2d2-196d-490b-9e35-24920aa32338">
+
+*Step 6*: See the results<br>
+<img width="1260" alt="Screenshot 2023-09-22 at 15 47 30" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/8039d445-7c76-421d-9a56-d97dd4699ffa">
 
 #### Authors
 Kimberly García - initial setup and tests
