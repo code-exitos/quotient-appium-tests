@@ -19,7 +19,7 @@
 3. Install `JDK` (Java Development Kit)
 4. Connect and setup a `mobile emulator`
 
-### Appium Desktop
+### Appium
 You can run the an appium server using the `Appium Desktop` app or installing it with `Node js`
 * `Method 1`: Install Appium using Node.js
   - Follow this instructions: https://appium.io/docs/en/2.1/quickstart/install/
