@@ -3,7 +3,10 @@
 1. [Tools used to run a test](#Tools-used-to-run-a-test)
    * [Appium Desktop](#Appium-Desktop) 
    * [Appium Inspector](#Appium-Inspector)
-2. [Steps to run a test](#Steps-to-run-a-test)
+   * [JDK](#JDK)
+   * [Emulator](#Emulator)
+2. [Steps to create or run a test](#Steps-to-create-or-run-a-test)
+   * [Structure of the repository](#Structure-of-the-repository)
 
 ## Tools and libraries used to run a test
 1. Download and install `Appium Server` 
@@ -30,8 +33,30 @@ Appium inspector allows you to check the selectors of the app, this is `optional
 - More documentation about capabilities: https://appium.io/docs/en/2.1/guides/caps/
 - Example with my own setup:
 
-## Steps to run a test
+### JDK
+Install JDK and set up the variables on your computer in .bash_profile or .bashrc file.
+* Setup instructions: https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux
+
+### Emulator
+If you use Android Studio you must set the Environment Variables in the `edit configurations` options of Appium Server
+
+## Steps to create or run a test
 1. Clone this repository: https://github.com/code-exitos/quotient-appium-tests.git
+2. Open the repository using your preferred IDE for example VS code or IntelliJ 
+
+### Structure of the repository
+This repository is using a POM (Project Page Model) structure
+* The emulator `capabilities` is located in this class path `src/test/java/setups/Capabilities.java`
+* The `test cases` with Gherkin are located in: `src/main/resources/features/`
+* The `test actions` and `locators` are located inside this path: `src/test/java/screens/`
+* The `test steps` are located in this path: `src/test/java/steps/`
+
+#### Capabilities
+In this java class you must set the capabilities of the phone that you are emulating
+
+### Test cases
+The test cases must be done with the `Gherkin` syntax, for this we are using `Cucumber framework` that executes tests written in the Gherkin language in this project.
+* There is a example of this on the Onboarding scenario feature that is located in this path: src/main/resources/features/OnboardingScenario.feature
 
 ### Authors
 Kimberly García - initial setup and tests
