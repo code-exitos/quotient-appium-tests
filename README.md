@@ -73,5 +73,11 @@ Some examples of keywords are:
 ## Example
 For this example I'm going to use the Onboarding test that is already done
 
-### Authors
+*Step1*: Configure the `capabilities` inside the Capabilities file<br>
+*Step2*: Create the `feature` inside the features folder<br>
+*Step3*: Create a page file and inside `get the selectors` and `create the methods` that will use this selectors inside the pages folder<br>
+*Step4*: Create the `test steps` inside the steps folder<br>
+*Step5*: Run the scenario
+
+#### Authors
 Kimberly García - initial setup and tests
