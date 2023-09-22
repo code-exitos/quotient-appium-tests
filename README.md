@@ -54,9 +54,24 @@ This repository is using a POM (Project Page Model) structure
 #### Capabilities
 In this java class you must set the capabilities of the phone that you are emulating
 
-### Test cases
+#### Test cases
 The test cases must be done with the `Gherkin` syntax, for this we are using `Cucumber framework` that executes tests written in the Gherkin language in this project.
 * There is a example of this on the Onboarding scenario feature that is located in this path: src/main/resources/features/OnboardingScenario.feature
+
+#### Test actions
+In this files we must declare the `methods` and `locators` for the elements of the screen that we are testing
+* Methods where we define the actions that will be done on each step of the tests
+* Locators (selectors) of the screen elements (buttons, inputs, etc)
+
+#### Test steps
+The steps are execution of the scenario keywords<br>
+Some examples of keywords are:
+- Feature
+- Scenario
+- Given, When, Then, And, But for steps (or *)
+
+## Example
+For this example I'm going to use the Onboarding test that is already done
 
 ### Authors
 Kimberly García - initial setup and tests
