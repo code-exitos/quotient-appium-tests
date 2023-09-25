@@ -32,15 +32,35 @@ You can run the an appium server using the `Appium Desktop` app or installing it
 ### Appium Inspector
 Appium inspector allows you to check the selectors of the app, this is `optional`, you can also find the selectors on the quotient-terminal codebase.
 
-1. Installation 
+1. *Installation* 
 - Install it here: https://github.com/appium/appium-inspector/releases
 - More documentation: https://github.com/appium/appium-inspector
 
-2. Setup
+2. *Setup*
 - Once it is installed the next step is to set up the capabilities of the emulated mobile that will be used.
-- More documentation about capabilities: https://appium.io/docs/en/2.1/guides/caps/
-- Example with my own setup:<br>
-<img width="1549" alt="Screenshot 2023-09-22 at 15 49 50" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/1d6e345c-8e01-4c3c-8369-50b4ad5cc2cc">
+- More documentation about capabilities: https://appium.io/docs/en/2.1/guides/caps/<br>
+
+Example with my own setup:<br>
+<img width="1549" alt="Screenshot 2023-09-22 at 15 49 50" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/1d6e345c-8e01-4c3c-8369-50b4ad5cc2cc"><br><br>
+
+
+3. *Selectors*<br>
+To get and use a selector you first must add a accessibilityLabel or use a testId to the element that you want to test
+* Appium accessibilityLabel selector on the code:
+```
+ <Button
+  type="primary"
+  accessibilityLabel="auth-form-button"
+  testID="auth-form-button"
+  disabled={buttonDisabled}
+  onPress={onPressButton}
+>
+  {buttonTitle}
+</Button>
+```
+Now you can see the selector on Appium inspector
+<img width="1290" alt="Screenshot 2023-09-24 at 18 35 18" src="https://github.com/code-exitos/quotient-appium-tests/assets/65067847/5a2ca330-8236-4622-832b-79b591a6d84e">
+
 
 ### JDK
 Install JDK and set up the variables on your computer in .bash_profile or .bashrc file.
